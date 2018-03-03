@@ -15,3 +15,60 @@ border-radius: 3px;
 	background-color: rgb(191, 38, 10);
 	cursor: pointer;
 }
+
+#openai_receipt {
+	position:absolute;
+	top: 0px;
+	width:100%;
+	height:100%;
+	margin: 0 auto;
+	background-color: white;
+	z-index:999999;
+
+}
+
+.openai_ali {
+	display: block;
+	width: 166px;
+	height: 40px;
+	text-indent: -999em;
+	overflow: hidden;
+	background-image: url("https://i.alicdn.com/ae-header/20180102150215/buyer/common/img/icons_x2-s5df4356ff1.png");
+	background-size: 166px 2322px;
+	background-position: 0 -28px;
+}
+
+#openai_content {
+	width: 900px;
+	margin: 0 auto;
+	margin-top:30px;
+}
+
+.openai_invoice_storename {
+	font-size: 18px;
+}
+.openai_store { 
+	font-weight:bold;
+}
+
+.openai_invoice_billto {
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight:bold;
+}
+
+.openai_billto {
+	font-size:14px;
+}
+
+.openai_tr {
+	height:120px;
+}
+
+.openai_result {
+	margin-top: 30px;
+	font-size: 16px;
+}
+.openai_ordertotal {
+	font-weight:bold;
+}
