@@ -1,12 +1,31 @@
+/**
+ * OpenInvoice - Chrome plugin to generate AliExpress invoices
+ * Copyright (C) 2018  Hans Jørgen Nygårdshaug
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ *
+ * @license GPL-3.0+ <http://spdx.org/licenses/GPL-3.0+>
+ */
 
-var receiptLayout = '<div id="openai_content"><div class="openai_header">' +
-'<span class="openai_ali">AliExpress</span>' +
-'<div class="openai_ali_address">' +
-'<b>Alibaba (China) Co., Ltd</b><br>'+
-'969 West Wen Yi Road<br>'+
-'Yu Hang District, Hangzhou 311121, China'+
-'</div>' +
-'</div><div class="clearfix"></div>' +
+ var receiptLayout = '<div id="openai_content"><div class="openai_header">' +
+ '<span class="openai_ali">AliExpress</span>' +
+ '<div class="openai_ali_address">' +
+ '<b>Alibaba (China) Co., Ltd</b><br>'+
+ '969 West Wen Yi Road<br>'+
+ 'Yu Hang District, Hangzhou 311121, China'+
+ '</div>' +
+ '</div><div class="clearfix"></div>' +
 '<div class="openai_invoice_billto"><u>Bill to</u></div>' +
 '<div class="openai_billto openai_billname"></div>' +
 '<div class="openai_billto openai_billadr"></div>' +
