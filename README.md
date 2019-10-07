@@ -1,6 +1,16 @@
 # OpenAlinvoice
 Chrome plugin project to generate AliExpress invoices
 
+## Installation
+This extension is not published in the Chrome Webstore, but you can install it directly using the extension developer mode.
+
+1. Clone or download this repository
+2. Go to `chrome://extensions/`
+3. Activate developer mode using the switch in the top right corner
+4. Click the "Load unpacked" button, and select the folder you downloaded/cloned this repository to
+
+There's some more information in the [Chrome Developer Guide](https://developer.chrome.com/extensions/getstarted#manifest).
+
 ## License
 Copyright (C) 2018  Hans Jørgen Nygårdshaug
 
