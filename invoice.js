@@ -17,7 +17,7 @@
  *
  * @license GPL-3.0+ <http://spdx.org/licenses/GPL-3.0+>
  */
- 
+
 var receiptLayout = '<div id="openai_content"><span class="openai_ali">AliExpress</span>' +
 '<div class="openai_invoice_storename">Store Name: <span class="openai_store"></span></div>' +
 '<div class="openai_invoice_billto"><u>Bill to</u></div>' +
@@ -80,8 +80,8 @@ function main() {
 	getClass("openai_paydate", 0).innerHTML = getClass("pay-c4", 2).innerHTML.trim();
 
 	var prods = document.getElementsByClassName("order-bd");
-	for (var key in prods) {
-		m = prods[key].cloneNode(true)
+	for (let prod of prods) {
+		m = prod.cloneNode(true)
 		m.className = "openai_tr";
 		document.getElementById("openai_ProductTable").appendChild(m);
 	}
