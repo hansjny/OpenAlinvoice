@@ -31,7 +31,7 @@ border-radius: 3px;
 	display: block;
 	width: 166px;
 	height: 40px;
-	text-indent: -999em;
+	text-indent: 999em;
 	overflow: hidden;
 	background-image: url("https://i.alicdn.com/ae-header/20180102150215/buyer/common/img/icons_x2-s5df4356ff1.png");
 	background-size: 166px 2322px;
@@ -43,11 +43,22 @@ border-radius: 3px;
 	margin: 0 auto;
 	margin-top:30px;
 }
-
+.openai_header {
+	float: right;
+	text-align: right;
+}
+#openai_ProductTable {
+	clear: both;
+}
+.openai_order_details {
+	float: right;
+	font-size: 16px;
+	padding-bottom: 20px;
+}
 .openai_invoice_storename {
 	font-size: 18px;
 }
-.openai_store { 
+.openai_store {
 	font-weight:bold;
 }
 

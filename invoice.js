@@ -18,7 +18,15 @@
  * @license GPL-3.0+ <http://spdx.org/licenses/GPL-3.0+>
  */
 
-var receiptLayout = '<div id="openai_content"><span class="openai_ali">AliExpress</span>' +
+ var receiptLayout = '<div id="openai_content"><div class="openai_header">' +
+ '<span class="openai_ali">AliExpress</span>' +
+ '<div class="openai_ali_address">' +
+ '<b>Alibaba (China) Co., Ltd</b><br>'+
+ '969 West Wen Yi Road<br>'+
+ 'Yu Hang District, Hangzhou 311121, China'+
+ '</div>' +
+ '</div><div class="clearfix"></div>' +
+'<div id="openai_content"><span class="openai_ali">AliExpress</span>' +
 '<div class="openai_invoice_storename">Store Name: <span class="openai_store"></span></div>' +
 '<div class="openai_invoice_billto"><u>Bill to</u></div>' +
 '<div class="openai_billto openai_billname"></div>' +
@@ -26,6 +34,11 @@ var receiptLayout = '<div id="openai_content"><span class="openai_ali">AliExpres
 '<div class="openai_billto openai_billadr2"></div>' +
 '<div class="openai_billto openai_billzip"></div>' +
 '<div class="openai_billto openai_billphone"></div>' +
+'<div class="openai_order_details">' +
+'<div class="openai_invoice_storename">Store Name: <span class="openai_store"></span></div>' +
+'<div class="openai_invoice_order_number">Order No.: <span class="openai_order_number"></span></div>' +
+'<div class="openai_invoice_order_date">Order Date: <span class="openai_order_date"></span></div>' +
+'</div>' +
 	'<table class="product-table" id="openai_ProductTable" data-spm="6">   '+
 	'<colgroup>   '+
 	'<col class="baobei">                   '+
@@ -64,14 +77,15 @@ function main() {
 	document.getElementsByTagName("body")[0].appendChild(elem);
 	elem.innerHTML = receiptLayout
 
-
 	var storeName = getClass("user-name-text", 0).querySelector("a").innerHTML;
 	getClass("openai_products", 0).innerHTML = document.querySelector("td[class='product-price']").innerHTML.trim();
 	getClass("openai_shipping").innerHTML = document.querySelector("td[class='shipping-price']").innerHTML.trim();
 	getClass("openai_ordertotal").innerHTML = document.querySelector("td[class='order-price']").innerHTML.trim();
 	console.log(storeName)
 	getClass("openai_store", 0).innerHTML = storeName;
-	getClass("openai_billname", 0).innerHTML = getClass("i18ncopy", 0).innerHTML.trim()
+	getClass("openai_order_number", 0).innerHTML = getClass("order-no", 0).innerHTML.trim();
+	getClass("openai_order_date", 0).innerHTML = getClass("pay-c4", 2).innerHTML.trim().split(" ")[0];
+	getClass("openai_billname", 0).innerHTML = getClass("i18ncopy", 0).innerHTML.trim();
 	getClass("openai_billadr", 0).innerHTML = getClass("i18ncopy", 1).innerHTML.trim();
 	getClass("openai_billadr2", 0).innerHTML = getClass("i18ncopy", 2).innerHTML.trim();
 	getClass("openai_billzip", 0).innerHTML = getClass("i18ncopy", 3).innerHTML.trim();
