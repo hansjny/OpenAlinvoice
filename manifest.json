@@ -3,11 +3,11 @@
 
 	"name": "Open AliExpress Invoice Generator",
 	"description": "This interface lets the user generate invoices from the order made on AliExpress",
-	"version": "0.18.3.3",	
+	"version": "0.19.10.7",	
 
 	"icons": {
-		"16": "icons/16.png", 
-		"48": "icons/48.png", 
+		"16": "icons/16.png",
+		"48": "icons/48.png",
 		"128": "icons/128.png"
 	},
 	"content_scripts": [
